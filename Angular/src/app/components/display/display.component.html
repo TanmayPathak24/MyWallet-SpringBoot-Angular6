@@ -1,0 +1,18 @@
+<table class="table table-hover table-dark">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Account Holder Name</th>
+      <th scope="col">Mobile Number</th>
+      <th scope="col">Current Balance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let account of list">
+      <td>{{account.id}}</td>
+      <td>{{account.holdername}}</td>
+      <td>{{account.mobileno}}</td>
+      <td>{{account.balance}}</td>
+    </tr>
+  </tbody>
+</table>

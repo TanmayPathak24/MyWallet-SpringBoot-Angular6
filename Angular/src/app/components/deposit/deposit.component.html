@@ -1,0 +1,26 @@
+<div class="jumbotron" id="div">
+    <h2>Deposit Operation</h2>
+<form>
+    <div class="form-group">
+        <table>
+            <tr>
+                <td><label>Mobile Number of your account</label></td>
+                <td>
+                    <input type="number" class="form-control" placeholder="Enter Mobile Number" #mobile>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Enter Amount</label></td>
+                <td>
+                    <input type="number" class="form-control" placeholder="Enter Mobile Number" #amount>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="btn btn-primary" (click)="deposit(mobile.value, amount.value)">Deposit</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</form>
+</div>

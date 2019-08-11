@@ -1,0 +1,25 @@
+<div class="jumbotron" id="addform">
+    <div id="addheading"><h2>Account Registration</h2></div>
+    <form>
+        <div class="form-group">
+            <label>Account ID</label>
+            <input name="id" type="number" class="form-control" placeholder="Enter Account ID" [(ngModel)]="id">
+        </div>
+        <div class="form-group">
+            <label>Account Holder Name</label>
+            <input name="holdername" type="text" class="form-control" placeholder="Enter Your Name" [(ngModel)]="holdername">
+        </div>
+        <div class="form-group">
+            <label>Account Mobile Number</label>
+            <input name="mobileno" type="number" class="form-control" placeholder="Enter Your Mobile Number" [(ngModel)]="mobileno">
+            <small class="form-text text-muted">You can do all your money transaction using your Mobile Number.</small>
+        </div>
+        <div class="form-group">
+            <label>Account Initial Balance</label>
+            <input name="balance" type="number" class="form-control" placeholder="Enter Your Name" [(ngModel)]="balance">
+        </div>
+        <button class="btn btn-success" (click)="addAccount()">Submit</button>
+    </form>
+</div>
+
+{{message.message}}

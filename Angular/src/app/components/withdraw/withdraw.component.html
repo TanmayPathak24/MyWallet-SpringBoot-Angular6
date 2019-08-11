@@ -1,0 +1,27 @@
+
+<div class="jumbotron" id="withdrawdiv">
+    <h2>Withdraw Operation</h2>
+
+    <div class="form-group">
+        <table>
+            <tr>
+                <td><label>Mobile Number of your account</label></td>
+                <td>
+                    <input type="number" class="form-control" placeholder="Enter Mobile Number" [(ngModel)]="mobile">
+                </td>
+            </tr>
+            <tr>
+                <td><label>Enter Amount</label></td>
+                <td>
+                    <input type="number" class="form-control" placeholder="Enter Mobile Number" [(ngModel)]="amount">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="btn btn-primary" (click)='withdraw()'>Withdraw</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</div>

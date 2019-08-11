@@ -1,0 +1,32 @@
+<div class="jumbotron" id="div">
+    <h2>Transfer Operation</h2>
+
+    <div class="form-group">
+        <table>
+            <tr>
+                <td><label>Mobile Number of your account</label></td>
+                <td>
+                    <input type="number" class="form-control" placeholder="Enter Mobile Number" #from>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Mobile Number of another account</label></td>
+                <td>
+                    <input type="number" class="form-control" placeholder="Enter Mobile Number" #to>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Enter Amount</label></td>
+                <td>
+                    <input type="number" class="form-control" placeholder="Enter Mobile Number" #amount>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="btn btn-primary" (click)=transfer(from.value,to.value,amount.value)>Transfer</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</div>
